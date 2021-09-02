@@ -7,6 +7,8 @@ terraform {
   }
 }
 
+variable "account" {}
+
 resource "aws_s3_bucket" "test" {
   bucket_prefix = "${var.account}-nakagawa-tfc-test-"
 }
